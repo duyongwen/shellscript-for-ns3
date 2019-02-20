@@ -551,7 +551,7 @@ sudo figlet -f mini Generating Link
 
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 
-wget -k -l 0 "http://www.nsnam.org/release/" -O index.html ; cat index.html | grep -o 'https://www.nsnam.org/release/ns-allinone-3.[0-9]*[0-9].tar.bz2' | tail -1 > link 
+wget -k -l 0 "http://www.nsnam.org/releases/ns-3-29" -O index.html ; cat index.html | grep -o 'https://www.nsnam.org/releases/ns-allinone-3.[0-9]*[0-9].tar.bz2'|tail -1 > link
 
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 
